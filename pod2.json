@@ -1,0 +1,25 @@
+{
+    "kind": "Pod",
+    "apiVersion": "v1",
+    "metadata": {
+      "creationTimestamp": null,
+      "name": "hello-k8s2",
+      "labels": {
+        "run": "hello-k8s"
+      }
+    },
+    "spec": {
+      "containers": [
+        {
+          "name": "hello-k8s",
+          "image": "jkleinert/nodejsint-workshop",
+          "ports": [
+            {
+              "containerPort": 8080
+            }
+          ],
+          "resources": {}
+        }
+      ]
+    }
+  }

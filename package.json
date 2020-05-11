@@ -1,0 +1,34 @@
+{
+  "name": "kubernetes-by-keytar",
+  "version": "0.0.1",
+  "description": "Visualize k8s resources by playing keytar",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "node index.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "Jan Kleinert",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "openshift-rest-client": "^4.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "hello-k8s",
+        "creationTimestamp": null,
+        "labels": {
+            "run": "hello-k8s"
+        }
+    },
+    "spec": {
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 8080,
+                "targetPort": 8080
+            }
+        ],
+        "selector": {
+            "run": "hello-k8s"
+        },
+        "type": "NodePort"
+    },
+    "status": {
+        "loadBalancer": {}
+    }
+}

@@ -1,0 +1,105 @@
+body {
+  background-color: #1e1e1e;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.svg-wrapper {
+  border: 2px solid #fff;
+  border-radius:18px;
+  margin: 50px 50px 0px 50px;
+  padding: 0px;
+  width:820px
+}
+
+svg {
+  background-color: #1e1e1e;
+  padding-top:10px;
+  width: 800px;
+}
+
+circle { 
+  fill: #6495ed;
+  animation-duration: 1s;
+  animation-name: pulse;
+}
+
+circle.Running {
+  stroke: #006400;
+  stroke-width: 2px;
+  fill: #008000;
+  animation-duration: 1s;
+  animation-name: pulse;
+}
+
+circle.Pending {
+  stroke: #daa520;
+  stroke-width: 2px;
+  fill: #ffd700;
+  animation-duration: 1s;
+  animation-name: pulse;
+}
+
+rect.service {
+  stroke: #1c9c96;
+  fill: #30fcf1;
+  stroke-width: 2px;
+  animation-duration: 1s;
+  animation-name: pulse;
+}
+
+rect.deployment {
+  stroke: #b8207b;
+  fill: #f73cab;
+  stroke-width: 2px;
+  animation-duration: 1s;
+  animation-name: pulse;
+}
+
+line.service-1 {
+  stroke: #888;
+  stroke-width: 2px;
+}
+
+line.deployment-1 {
+  stroke: #888;
+  stroke-width: 2px;
+}
+
+.podlabel {
+  font: 16px arial;
+}
+
+img.podlogo {
+  position: relative;
+  top: -300px;
+}
+
+@keyframes pulse {
+  from {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+
+  to {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
+}
