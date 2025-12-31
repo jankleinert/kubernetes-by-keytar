@@ -13,11 +13,11 @@
   "author": "Jan Kleinert",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "openshift-rest-client": "^4.0.1",
+    "express": "^4.22.1",
+    "openshift-rest-client": "^10.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^5.0.1"
   },
   "browserslist": {
     "production": [
